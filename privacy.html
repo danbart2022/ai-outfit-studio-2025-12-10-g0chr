@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Outfit Studio - Probiere neue Styles aus ohne die Kleidung wechseln zu müssen. Dein digitaler Kleiderschrank mit künstlicher Intelligenz.">
+    <title>Privacy Policy - AI Outfit Studio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#FFFFFF',
+                        accent: '#4A90E2',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px rgba(0,0,0,0.1)',
+                        'glow': '0 0 20px rgba(74, 144, 226, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            color: #1a1a1a;
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        
+        .faq-answer:not(.hidden) {
+            max-height: 1000px;
+            opacity: 1;
+            padding-top: 1rem;
+        }
+
+        /* Smooth reveal animation for sections */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="https://danbart2022.github.io/ai-outfit-studio-2025-12-10-g0chr" class="flex-shrink-0 flex items-center gap-2 group cursor-pointer no-underline">
+                    <div class="p-2 bg-black rounded-lg group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                        </svg>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-black">AI Outfit Studio</span>
+                </a>
+
+                <!-- Back Link -->
+                <a href="https://danbart2022.github.io/ai-outfit-studio-2025-12-10-g0chr" class="text-gray-600 hover:text-accent font-medium transition-colors duration-300">
+                    ← Back
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative pt-32 pb-24 min-h-screen">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Paper/Card Container -->
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-soft border border-gray-100 reveal animate-fade-in-up">
+                
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black mb-8">Datenschutzerklärung</h1>
+                <p class="text-sm text-gray-500 mb-10 pb-6 border-b border-gray-100">
+                    Stand: 10. Dezember 2025
+                </p>
+
+                <div class="prose prose-lg max-w-none text-gray-600">
+                    
+                    <!-- Introduction -->
+                    <section class="mb-10">
+                        <h2 class="text-2xl font-bold text-black mb-4">1. Einleitung</h2>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            Willkommen bei AI Outfit Studio. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Diese Datenschutzerklärung soll Sie darüber informieren, wie wir Ihre personenbezogenen Daten erheben, verwenden, speichern und schützen, wenn Sie unsere Website und unsere Dienste nutzen.
+                        </p>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            Durch die Nutzung unserer Dienste erklären Sie sich mit der Erfassung und Nutzung von Informationen gemäß dieser Richtlinie einverstanden. Wir verpflichten uns, Ihre Privatsphäre gemäß der Datenschutz-Grundverordnung (DSGVO) und anderen geltenden Datenschutzgesetzen zu schützen.
+                        </p>
+                    </section>
+
+                    <!-- Data Collection -->
+                    <section class="mb-10">
+                        <h2 class="text-2xl font-bold text-black mb-4">2. Datenerfassung</h2>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            Wir erfassen verschiedene Arten von Informationen zu unterschiedlichen Zwecken, um unseren Service für Sie bereitzustellen und zu verbessern:
+                        </p>
+                        <ul class="list-disc pl-6 space-y-2 mb-4 text-gray-600">
+                            <li><strong>Persönliche Daten:</strong> Während der Nutzung unseres Dienstes bitten wir Sie möglicherweise um bestimmte personenbezogene Daten, mit denen Sie kontaktiert oder identifiziert werden können (z. B. E-Mail-Adresse, Name).</li>
+                            <li><strong>Nutzungsdaten:</strong> Wir untersuchen, wie auf den Dienst zugegriffen wird und wie er genutzt wird. Diese Daten können Informationen wie die Internet-Protokoll-Adresse (IP-Adresse) Ihres Computers, Browsertyp, Browserversion und die Seiten unseres Dienstes, die Sie besuchen, enthalten.</li>
+                            <li><strong>Bilddaten:</strong> Für die Kernfunktion unserer App laden Sie Fotos hoch. Diese Bilder werden ausschließlich für die Erstellung der KI-Outfits verarbeitet und temporär sicher gespeichert.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Use of Information -->
+                    <section class="mb-10">
+                        <h2 class="text-2xl font-bold text-black mb-4">3. Nutzung der Informationen</h2>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            AI Outfit Studio verwendet die gesammelten Daten für verschiedene Zwecke:
+                        </p>
+                        <ul class="list-disc pl-6 space-y-2 mb-4 text-gray-600">
+                            <li>Um unseren Service bereitzustellen und zu warten.</li>
+                            <li>Um Sie über Änderungen an unserem Service zu informieren.</li>
+                            <li>Um Ihnen zu ermöglichen, interaktive Funktionen unseres Dienstes zu nutzen, wenn Sie dies wünschen (z.B. das Generieren von Outfits).</li>
+                            <li>Um Kundensupport zu bieten.</li>
+                            <li>Um Analysen oder wertvolle Informationen zu sammeln, damit wir unseren Service verbessern können.</li>
+                            <li>Um technische Probleme zu erkennen, zu vermeiden und zu beheben.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Cookie Policy -->
+                    <section class="mb-10">
+                        <h2 class="text-2xl font-bold text-black mb-4">4. Cookies und Tracking</h2>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            Wir verwenden Cookies und ähnliche Tracking-Technologien, um die Aktivitäten auf unserem Dienst zu verfolgen und bestimmte Informationen zu speichern. Cookies sind Dateien mit einer kleinen Datenmenge, die eine anonyme eindeutige Kennung enthalten können.
+                        </p>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            Sie können Ihren Browser so anweisen, alle Cookies abzulehnen oder anzuzeigen, wenn ein Cookie gesendet wird. Wenn Sie jedoch keine Cookies akzeptieren, können Sie möglicherweise einige Teile unseres Dienstes nicht nutzen.
+                        </p>
+                    </section>
+
+                    <!-- Contact -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-black mb-4">5. Kontakt</h2>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte:
+                        </p>
+                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-center">
+                                    <span class="font-bold w-24">E-Mail:</span> 
+                                    <a href="mailto:hello@aioutfitstudio.de" class="text-accent hover:underline">hello@aioutfitstudio.de</a>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="font-bold w-24">Adresse:</span> 
+                                    <span>Musterstraße 1, 10115 Berlin, Deutschland</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="col-span-1 lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="p-1.5 bg-black rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                            </svg>
+                        </div>
+                        <span class="font-bold text-lg text-black">AI Outfit Studio</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Dein digitaler Styling-Partner. Entdecke Mode neu, spare Zeit und vermeide Retouren mit unserer innovativen KI-Technologie.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-black transition-colors">
+                            <i class="fa-brands fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-black transition-colors">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-black transition-colors">
+                            <i class="fa-brands fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Empty columns for spacing on large screens, or navigation columns -->
+                <div class="col-span-1">
+                    <h3 class="font-bold text-black mb-4">Produkt</h3>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="#features" class="hover:text-accent transition-colors">Funktionen</a></li>
+                        <li><a href="#benefits" class="hover:text-accent transition-colors">Vorteile</a></li>
+                        <li><a href="#testimonials" class="hover:text-accent transition-colors">Kundenstimmen</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="font-bold text-black mb-4">Rechtliches</h3>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li><a href="privacy.html" class="hover:text-accent transition-colors">Datenschutzerklärung</a></li>
+                        <li><a href="terms.html" class="hover:text-accent transition-colors">Nutzungsbedingungen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-span-1">
+                    <h3 class="font-bold text-black mb-4">Kontakt</h3>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3 mt-0.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                            <span>hello@aioutfitstudio.de</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500 mb-4 md:mb-0">
+                    &copy; 2025 AI Outfit Studio. Alle Rechte vorbehalten.
+                </p>
+                <div class="flex space-x-6">
+                    <!-- Only permitted footer links here -->
+                    <a href="privacy.html" class="text-xs text-gray-500 hover:text-gray-900 transition-colors">Datenschutz</a>
+                    <a href="terms.html" class="text-xs text-gray-500 hover:text-gray-900 transition-colors">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle - kept for potential future use or consistency, though header is simplified
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const icon = item.querySelector('.faq-icon');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        icon?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            // Account for fixed header height
+                            const headerOffset = 80;
+                            const elementPosition = target.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                            
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Simple Scroll Animation (Reveal on Scroll)
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section, .reveal').forEach(section => {
+                section.classList.add('reveal');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
